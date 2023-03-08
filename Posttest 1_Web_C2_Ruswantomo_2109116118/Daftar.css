@@ -1,0 +1,127 @@
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 36px;
+    font-family: 'Helvetica Neue', sans-serif;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  h2 {
+    margin-top: 0;
+    margin-left: 40px;
+    font-size: 32px;
+  }
+  
+  h3 {
+    margin-top: 80px;
+    margin-left: 40px;
+    font-size: 32px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  nav li {
+    margin-left: 20px;
+    flex: 1;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: -10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+    font-size: 16px;
+  }
+  
+  nav a:hover {
+    background-color: #f0c869;
+    transform: translateY(-3px);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  }
+  /* Tambahkan style ini */
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"], input[type="email"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  input[type="radio"], input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  select {
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  input[type="file"] {
+    margin-bottom: 20px;
+  }
+  
+  button[type="submit"] {
+    background-color: #f0c869;
+    color: #333;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #333;
+    color: #fff;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  footer {
+    background-color: #f0c869;
+    color: #333;
+    padding: 10px;
+    text-align: center;
+    border-top: 2px solid #333;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    margin-top: 80px;
+  }

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cloudmedia</title>
+    <link rel="stylesheet" href="Daftar.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Cloudmedia</h1>
+      <nav>
+        <ul>
+          <li><a href="Beranda.html">Beranda</a></li>
+          <li><a href="Tentang.html" >Tentang</a></li>
+          <li><a href="Kontak.html">Kontak</a></li>
+          <li><a href="Daftar.html">Daftar Member</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <form
+        action="proses_pendaftaran.php"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        <label for="nama">Nama Lengkap:</label>
+        <input type="text" id="nama" name="nama" required />
+
+        <label for="email">Alamat Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="jenis_kelamin">Jenis Kelamin:</label>
+        <div class="radio-group">
+          <label
+            ><input
+              type="radio"
+              name="jenis_kelamin"
+              value="Laki-laki"
+              required
+            />
+            Laki-laki</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="jenis_kelamin"
+              value="Perempuan"
+              required
+            />
+            Perempuan</label
+          >
+        </div>
+
+        <label for="hobi">Hobi:</label>
+        <div class="checkbox-group">
+          <label
+            ><input type="checkbox" name="hobi[]" value="Membaca" />
+            Membaca</label
+          >
+          <label
+            ><input type="checkbox" name="hobi[]" value="Menulis" />
+            Menulis</label
+          >
+          <label
+            ><input type="checkbox" name="hobi[]" value="Bermain Musik" />
+            Bermain Musik</label
+          >
+        </div>
+
+        <label for="jurusan">Jurusan:</label>
+        <select id="jurusan" name="jurusan">
+          <option value="">-- Pilih Jurusan --</option>
+          <option value="Teknik Informatika">Teknik Informatika</option>
+          <option value="Sistem Informasi">Sistem Informasi</option>
+          <option value="Komputerisasi Akuntansi">
+            Komputerisasi Akuntansi
+          </option>
+        </select>
+
+        <label for="foto">Unggah Foto:</label>
+        <input type="file" id="foto" name="foto" accept="image/*" />
+
+        <button type="submit">Daftar</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>Hak Cipta &copy; 2023 Ruswantomo. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
